@@ -50,7 +50,7 @@ const Services = () => {
                         onClick={() => setShowMoreServices(!showMoreServices)}
                         className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center mx-auto"
                     >
-                        {showMoreServices ? 'Show Less' : 'Show More Services'}
+                        {showMoreServices ? 'Show Less' : 'Show More'}
                         <ChevronDown
                             className={`ml-2 transform transition-transform duration-300 ${showMoreServices ? 'rotate-180' : ''}`}
                             size={20}
