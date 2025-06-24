@@ -1,26 +1,28 @@
-
 import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  variable: "--font-roboto",
+  weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
   title: "Print & Signage",
-  description: "Provide printing services",
+  description: "Professional printing and signage services for your business needs",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.variable} ${roboto.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
