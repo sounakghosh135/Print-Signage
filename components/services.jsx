@@ -2,7 +2,7 @@
 
 import { services } from '@/public/constants';
 import React, { useState } from 'react'
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 
 
@@ -11,6 +11,10 @@ const Services = () => {
     const [showMoreServices, setShowMoreServices] = useState(false);
 
     const visibleServices = showMoreServices ? services : services.slice(0, 3);
+
+    const handleOrderPlacement = () => {
+        window.open('https://docs.google.com/forms/d/e/1FAIpQLSdQiNb2UPx29yYxkYG-uUH2NAG1N2Q8Av_pwmFdvm29KKTIbw/viewform?usp=sf_link', '_blank');
+    };
 
     return (
         <section id="services" className="py-20 bg-gray-50">
@@ -50,7 +54,7 @@ const Services = () => {
                         onClick={() => setShowMoreServices(!showMoreServices)}
                         className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center mx-auto"
                     >
-                        {showMoreServices ? 'Show Less' : 'Show More'}
+                        {showMoreServices ? 'Show Less' : 'Show More Services'}
                         <ChevronDown
                             className={`ml-2 transform transition-transform duration-300 ${showMoreServices ? 'rotate-180' : ''}`}
                             size={20}
@@ -58,7 +62,24 @@ const Services = () => {
                     </button>
                 </div>
             </div>
-        </section>
+
+            {/* Order Placement Section */}
+            <div className="mt-16 text-center">
+                <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">Ready to Get Started?</h3>
+                    <p className="text-gray-600 text-lg mb-6">
+                        Place your order now and let us help you achieve your goals with our professional services.
+                    </p>
+                    <button
+                        onClick={handleOrderPlacement}
+                        className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center mx-auto text-lg cursor-pointer"
+                    >
+                        <ShoppingCart className="mr-3" size={24} />
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </section >
     )
 }
 

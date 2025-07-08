@@ -7,7 +7,7 @@ const Contact = () => {
         <section id="contact" className="py-20 bg-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-                    Contact Us on WhatsApp
+                    Contact Us
                 </h2>
 
                 <div className="max-w-2xl mx-auto mb-12">
@@ -18,11 +18,11 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         <div className="flex items-center justify-center">
                             <Phone className="text-teal-400 mr-2" size={20} />
-                            <span className="text-white">+1 (555) 123-4567</span>
+                            <span className="text-white">+91 7363961105</span>
                         </div>
                         <div className="flex items-center justify-center">
                             <Mail className="text-teal-400 mr-2" size={20} />
-                            <span className="text-white">info@printsign.com</span>
+                            <a href='mailto:swarnalifashions@gmail.com' className="text-white">swarnalifashions@gmail.com</a>
                         </div>
                         <div className="flex items-center justify-center">
                             <MapPin className="text-teal-400 mr-2" size={20} />

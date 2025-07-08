@@ -21,7 +21,7 @@ const Header = () => {
                         {/* Logo */}
                         <div className="flex-shrink-0">
                             <div className='flex items-center gap-2.5'>
-                                <Image src={"/images/LOGO.JPG"} alt='logo' width={50} height={50} />
+                                <Image src={"/images/LOGO.png"} alt='logo' width={50} height={50} />
                                 <p className="flex flex-col">
                                     <span className='text-gray-800 font-bold text-md md:text-lg'>Print & Signage</span>
                                     <span className='text-gray-700 font-semibold text-xs md:text-sm'>A unit of Swarnali Fashions</span>

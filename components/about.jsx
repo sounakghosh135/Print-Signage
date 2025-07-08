@@ -19,7 +19,7 @@ const About = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                         <div className="text-center">
                             <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-white font-bold text-2xl">5+</span>
+                                <span className="text-white font-bold text-xl">15+</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">Years Experience</h3>
                             <p className="text-gray-600">Delivering quality solutions</p>
@@ -27,7 +27,7 @@ const About = () => {
 
                         <div className="text-center">
                             <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-white font-bold text-2xl">50+</span>
+                                <span className="text-white font-bold text-xl">350+</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">Happy Clients</h3>
                             <p className="text-gray-600">Satisfied customers</p>
@@ -35,7 +35,7 @@ const About = () => {
 
                         <div className="text-center">
                             <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-white font-bold text-2xl">24/7</span>
+                                <span className="text-white font-bold text-xl">24/7</span>
                             </div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">Support</h3>
                             <p className="text-gray-600">Always here to help</p>
