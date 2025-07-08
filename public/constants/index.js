@@ -1,7 +1,7 @@
 export const services = [
     {
         id: 1,
-        title: "Visiting Card",
+        title: "Visiting Cards",
         description: "Professional printing services for visiting card.",
         color: "bg-gradient-to-br from-gray-800 to-gray-900",
         image: "/images/visiting card.png"
