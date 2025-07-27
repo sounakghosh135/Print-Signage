@@ -64,14 +64,6 @@ const Header = () => {
                 >
                   Contact
                 </button>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdQiNb2UPx29yYxkYG-uUH2NAG1N2Q8Av_pwmFdvm29KKTIbw/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-md font-bold transition-colors cursor-pointer"
-                >
-                  Order Now
-                </a>
               </div>
             </div>
 
@@ -115,14 +107,6 @@ const Header = () => {
               >
                 Contact
               </button>
-              <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdQiNb2UPx29yYxkYG-uUH2NAG1N2Q8Av_pwmFdvm29KKTIbw/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-md font-bold transition-colors cursor-pointer"
-                >
-                  Order Now
-                </a>
             </div>
           </div>
         )}
