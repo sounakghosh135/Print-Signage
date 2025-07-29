@@ -1,5 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
-import Link from "next/link";
+import { MapPin, Mail, Phone } from "lucide-react";
 import React from "react";
 
 const Contact = () => {
@@ -19,13 +18,20 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center justify-center">
               <Phone className="text-teal-400 mr-2" size={20} />
-              <span className="text-white">+91 7363961105</span>
+              <a
+                href="tel:+917363961105"
+                className="text-white mr-2"
+              >
+                +91-7363961105
+              </a>
             </div>
             <div className="flex items-center justify-center">
-              <Mail className="text-teal-400 mr-2" size={20} />
+              <span>
+                <Mail className="text-teal-400 mr-2" size={20} />
+              </span>
               <a
                 href="mailto:swarnalifashions@gmail.com"
-                className="text-white"
+                className="text-white mr-2"
               >
                 swarnalifashions@gmail.com
               </a>

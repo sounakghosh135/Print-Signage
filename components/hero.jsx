@@ -27,16 +27,16 @@ const Hero = () => {
               <span>Sign Boards for</span>
               <span>Your Business</span>
             </h1>
-            <div className="flex gap-3 items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center lg:justify-start w-full sm:w-auto">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer min-w-[160px] h-[56px]"
               >
                 Contact Us
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="inline-flex items-center bg-transparent border-2 border-white text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-900 shadow-lg cursor-pointer min-w-[160px] h-[56px]"
               >
                 Our Services
               </button>
@@ -44,7 +44,7 @@ const Hero = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdQiNb2UPx29yYxkYG-uUH2NAG1N2Q8Av_pwmFdvm29KKTIbw/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-white text-teal-700 font-bold py-4 px-8 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-white"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-teal-700 hover:bg-teal-50 font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-white min-w-[160px] h-[56px]"
               >
                 Order Now
               </a>
