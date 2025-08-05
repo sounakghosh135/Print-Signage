@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -53,14 +54,34 @@ const Hero = () => {
 
           {/* Right Image Placeholder */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-md lg:max-w-lg h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden relative">
+            <div
+              className="w-full max-w-lg lg:max-w-xl h-72 md:h-96 lg:h-[28rem] rounded-2xl overflow-hidden relative cursor-pointer transition-transform hover:scale-105 active:scale-95 group"
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSfuvpafTKOO0XNW_75ove7z9RQCFaBx_PuUVBKaV5sJ8bFW5w/viewform?usp=header",
+                  "_blank"
+                )
+              }
+            >
               <Image
                 src={"/images/hero.png"}
                 alt="hero image"
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
               />
+
+              {/* Text Overlay - Centered in Circle */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center max-w-[200px] px-4">
+                  <h3 className="text-white font-extrabold text-sm md:text-base lg:text-lg leading-tight tracking-tight drop-shadow-2xl group-hover:scale-105 transition-transform duration-300">
+                    CLICK HERE FOR
+                  </h3>
+                  <h3 className="text-white font-extrabold text-base md:text-lg lg:text-xl leading-tight tracking-tight drop-shadow-2xl group-hover:scale-105 transition-transform duration-300 mt-0.5">
+                    TODAY'S OFFER
+                  </h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
