@@ -5,6 +5,7 @@ import About from '@/components/about';
 import Footer from '@/components/footer';
 import Contact from '@/components/contact';
 import Services from '@/components/services';
+import ReviewsSection from '@/components/ReviewsSection';
 
 const PrintSignageWebsite = () => {
   
@@ -22,6 +23,9 @@ const PrintSignageWebsite = () => {
 
       {/* About Section */}
       <About />
+
+      {/* Review section */}
+      <ReviewsSection />
 
       {/* Contact Section */}
       <Contact />

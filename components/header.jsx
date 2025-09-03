@@ -59,6 +59,12 @@ const Header = () => {
                   About
                 </button>
                 <button
+                  onClick={() => scrollToSection("reviews")}
+                  className="text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-md font-bold transition-colors cursor-pointer"
+                >
+                  Reviews
+                </button>
+                <button
                   onClick={() => scrollToSection("contact")}
                   className="text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-md font-bold transition-colors cursor-pointer"
                 >
@@ -100,6 +106,12 @@ const Header = () => {
                 className="block w-full text-left text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-base font-semibold"
               >
                 About
+              </button>
+              <button
+                onClick={() => scrollToSection("reviews")}
+                className="block w-full text-left text-gray-800 hover:text-teal-600 px-3 py-2 rounded-md text-base font-semibold"
+              >
+                Reviews
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

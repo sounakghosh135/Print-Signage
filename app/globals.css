@@ -31,7 +31,12 @@ body {
 }
 
 /* Additional typography improvements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -39,11 +44,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Professional button and form styling */
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
 }
 
 /* Improved readability */
 p {
   line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
